@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="email.properties"/>
+
+    <bean id="happyFortuneService" class="domain.HappyFortuneService"></bean>
+
+    <!-- Constructor injection example -->
+    <bean id="coach" class="domain.BaseBallCoach">
+        <constructor-arg ref = "happyFortuneService"/>
+    </bean>
+
+    <!-- Setter injection example -->
+    <bean id="trackCoach" class="domain.TrackCoach">
+        <property name="fortuneService" ref="happyFortuneService"/>
+        <!--Literal value injection-->
+        <property name="name" value="John Doe"/>
+        <!--Value from properties file-->
+        <property name="EMail" value="${email}"/>
+    </bean>
+</beans>
