@@ -21,6 +21,7 @@
     <modules>
         <module>ioc-example</module>
         <module>di-example</module>
+        <module>ioc-di-annotations-example</module>
     </modules>
 
     <dependencies>
