@@ -21,6 +21,7 @@
     <modules>
         <module>ioc-di-annotations-example</module>
         <module>ioc-di-xml-example</module>
+        <module>ioc-di-java-example</module>
     </modules>
 
     <dependencies>
