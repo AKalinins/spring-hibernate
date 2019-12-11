@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="properties/name.properties"/>
+
+    <bean id="catFood" class="com.example.domain.CatFood" scope="prototype"></bean>
+    <bean id="catToy" class="com.example.domain.CatToy"></bean>
+    <bean id="dogFood" class="com.example.domain.DogFood" scope="prototype"></bean>
+    <bean id="dogToy" class="com.example.domain.DogToy"></bean>
+
+    <!-- Constructor injection example -->
+    <bean id="cat" class="com.example.domain.Cat" init-method="init" destroy-method="destroy">
+        <constructor-arg ref = "catToy"/>
+        <property name="food" ref="catFood"/>
+        <!--Value from properties file-->
+        <property name="name" value="${cat.name}"/>
+    </bean>
+
+    <!-- Setter injection example -->
+    <bean id="dog" class="com.example.domain.Dog">
+        <property name="toy" ref="dogToy"/>
+        <property name="food" ref="dogFood"/>
+        <property name="cat" ref="cat"/>
+        <!--Literal value injection-->
+        <property name="color" value="grey"/>
+        <!--Value from properties file-->
+        <property name="name" value="${dog.name}"/>
+    </bean>
+</beans>
