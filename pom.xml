@@ -25,6 +25,7 @@
         <module>ioc-di-xml-example</module>
         <module>ioc-di-java-example</module>
         <module>spring-mvc-demo</module>
+        <module>hibernate-bean-validator-example</module>
     </modules>
 
     <dependencies>
@@ -62,6 +63,12 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>${javax.jstl.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.1.0.Final</version>
         </dependency>
 
     </dependencies>
