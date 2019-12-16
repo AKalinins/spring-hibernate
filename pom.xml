@@ -26,6 +26,7 @@
         <module>ioc-di-java-example</module>
         <module>spring-mvc-demo</module>
         <module>hibernate-bean-validator-example</module>
+        <module>hibernate-demo</module>
     </modules>
 
     <dependencies>
@@ -71,6 +72,17 @@
             <version>6.1.0.Final</version>
         </dependency>
 
-    </dependencies>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.10.Final</version>
+        </dependency>
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
+        </dependency>
+
+    </dependencies>
 </project>
