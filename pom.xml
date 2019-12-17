@@ -27,6 +27,7 @@
         <module>spring-mvc-demo</module>
         <module>hibernate-bean-validator-example</module>
         <module>hibernate-demo</module>
+        <module>hibernate-one-to-one-demo</module>
     </modules>
 
     <dependencies>
