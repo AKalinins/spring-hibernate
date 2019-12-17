@@ -28,6 +28,7 @@
         <module>hibernate-bean-validator-example</module>
         <module>hibernate-demo</module>
         <module>hibernate-one-to-one-demo</module>
+        <module>hibernate-one-to-many-demo</module>
     </modules>
 
     <dependencies>
