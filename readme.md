@@ -8,3 +8,4 @@ hibernate-bean-validator-example - Bean validation using Hibernate Validator<br>
 hibernate-demo - Hibernate CRUD demo<br>
 hibernate-one-to-one-demo - Hibernate one-to-one relationship demo<br>
 hibernate-one-to-many-demo - Hibernate one-to-many relationship demo<br>
+hibernate-many-to-many-demo - Hibernate meny-to-many relationship demo<br>

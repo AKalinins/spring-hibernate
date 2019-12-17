@@ -29,6 +29,7 @@
         <module>hibernate-demo</module>
         <module>hibernate-one-to-one-demo</module>
         <module>hibernate-one-to-many-demo</module>
+        <module>hibernate-many-to-many-demo</module>
     </modules>
 
     <dependencies>
