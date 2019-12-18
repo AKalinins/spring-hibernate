@@ -30,6 +30,7 @@
         <module>hibernate-one-to-one-demo</module>
         <module>hibernate-one-to-many-demo</module>
         <module>hibernate-many-to-many-demo</module>
+        <module>spring-mvc-hibernate-demo</module>
     </modules>
 
     <dependencies>
@@ -58,6 +59,13 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet.version}</version>
@@ -68,6 +76,25 @@
             <artifactId>jstl</artifactId>
             <version>${javax.jstl.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl-api</artifactId>
+            <version>${javax.jstl.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>mchange-commons-java</artifactId>
+            <version>0.2.19</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5.5</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.hibernate.validator</groupId>
