@@ -31,6 +31,7 @@
         <module>hibernate-one-to-many-demo</module>
         <module>hibernate-many-to-many-demo</module>
         <module>spring-mvc-hibernate-demo</module>
+        <module>aop-example</module>
     </modules>
 
     <dependencies>
@@ -64,7 +65,6 @@
             <version>${spring.version}</version>
         </dependency>
 
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -95,7 +95,6 @@
             <version>0.9.5.5</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -112,6 +111,13 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.18</version>
+        </dependency>
+
+        <!-- Used in AOP example -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.5</version>
         </dependency>
 
     </dependencies>
