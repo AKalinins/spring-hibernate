@@ -11,3 +11,4 @@ hibernate-one-to-many-demo - Hibernate one-to-many relationship demo<br>
 hibernate-many-to-many-demo - Hibernate many-to-many relationship demo<br>
 spring-mvc-hibernate-demo - Spring MVC + Hibernate web app demo<br>
 aop-example - Aspect Oriented Programming example<br>
+spring-security-basic-security-demo - Basic security using Spring Security<br>
