@@ -33,6 +33,7 @@
         <module>spring-mvc-hibernate-demo</module>
         <module>aop-example</module>
         <module>spring-security-basic-security-demo</module>
+        <module>spring-security-with-database-demo</module>
     </modules>
 
     <dependencies>
