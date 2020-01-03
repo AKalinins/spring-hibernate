@@ -13,3 +13,4 @@ spring-mvc-hibernate-demo - Spring MVC + Hibernate web app demo<br>
 aop-example - Aspect Oriented Programming example<br>
 spring-security-basic-security-demo - Basic security using Spring Security<br>
 spring-security-with-database-demo - Basic security using Spring Security and database<br>
+spring-rest-demo - Spring REST<br>

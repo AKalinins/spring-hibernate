@@ -34,6 +34,7 @@
         <module>aop-example</module>
         <module>spring-security-basic-security-demo</module>
         <module>spring-security-with-database-demo</module>
+        <module>spring-rest-demo</module>
     </modules>
 
     <dependencies>
@@ -91,6 +92,7 @@
             <version>0.2.19</version>
         </dependency>
 
+        <!-- Connection pooling framework for managing database connections -->
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
@@ -140,6 +142,14 @@
             <artifactId>spring-security-taglibs</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <!-- Used for JSON<->POJO binding (for Spring REST demo) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+
 
     </dependencies>
 </project>
